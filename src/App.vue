@@ -154,7 +154,7 @@ const checkerX = function(arrayX,i){
   }
 }
 
-const findWinner1 = function(arrayX ,arrayO){
+const findWinner = function(arrayX ,arrayO){
   for (let i = 0; i < winArray.length; i++) {
     innerCounterO = checkerO(arrayO,i);
     innerCounterX = checkerX(arrayX,i);
@@ -186,7 +186,7 @@ const checkGame = function(ele,sym){
     arrayO.push(ele);
   }
   if ((arrayX.length >= 3) || (arrayO.length >= 3)){
-    findWinner1(arrayX,arrayO)
+    findWinner(arrayX,arrayO)
   }
 }
 
