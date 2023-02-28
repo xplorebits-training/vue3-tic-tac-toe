@@ -101,7 +101,6 @@ button:hover{
 </style>
 
 <script setup>
-
 import { ref } from 'vue';
 
 let count = 0;
@@ -157,8 +156,6 @@ const checkerX = function(arrayX,i){
 
 const findWinner1 = function(arrayX ,arrayO){
   for (let i = 0; i < winArray.length; i++) {
-    //innerCounterX = 0;
-    //innerCounterO = 0;
     innerCounterO = checkerO(arrayO,i);
     innerCounterX = checkerX(arrayX,i);
     if( innerCounterX==3 ){
